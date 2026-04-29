@@ -34,7 +34,7 @@ jobs:
         env:
           # NB: this variable is read by tools/release/copy_release_artifacts.sh
           # and must match the path in release_prep.sh under RELEASED_BINARY_INTEGRITY
-          DEST: binaries
+          DEST: binaries/go-binaries
         run: |
           rm -rf ${{ env.DEST }}
           mkdir -p ${{ env.DEST }}
